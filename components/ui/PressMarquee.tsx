@@ -55,19 +55,16 @@ const pressItems = [
 
 function MarqueeItem({ item }: { item: (typeof pressItems)[number] }) {
   return (
-    <div className="flex-shrink-0 flex flex-col items-center gap-3 px-12 border-r border-neutral-200 last:border-r-0">
-      <div className="relative h-8 w-28">
+    <div className="flex-shrink-0 flex items-center px-10">
+      <div className="relative h-36 w-80">
         <Image
           src={item.image}
           alt={item.name}
           fill
-          sizes="112px"
-          className="object-contain object-center grayscale opacity-60"
+          sizes="320px"
+          className="object-contain object-center grayscale opacity-80"
         />
       </div>
-      <p className="text-xs text-neutral-400 text-center max-w-[180px] leading-relaxed italic">
-        &ldquo;{item.quote}&rdquo;
-      </p>
     </div>
   );
 }
