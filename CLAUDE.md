@@ -78,11 +78,74 @@ public/
 
 **Logo inversion** — the nav inverts the logo (`filter: invert`) when over the dark hero video, then removes invert once scrolled.
 
-## Shopify Path (when approved)
+## Shopify Build (Active — approved May 20, 2026)
 
-The most direct migration is **Shopify Hydrogen** (headless React) — ~70% of this component code is reusable. Alternatively, a standard Shopify theme with the configurator as a custom JavaScript section calling the Cart API (`/cart/add.js`) to add 4 line items simultaneously.
+**Client:** Gordon Loi (Vitae Glass owner) · **Intermediary:** Joshua Hoffman
 
-The configurator in Shopify: each component (mouthpiece, percolator, base, connector) is a separate Shopify product. The wood ring connector standard is the key compatibility constraint — discuss with client whether they want 4 separate line items or a true bundle product (requires a third-party app like Bold Bundles).
+**Platform:** Custom Shopify theme on Dawn. Dawn is only the base-level Shopify foundation — all visual components are custom-built on top. Hydrogen is not in scope (budget).
+
+**Timeline:** Client's target launch is **August / September 2026** (per completed questionnaire). Paul took 1–2 weeks off after baby due date ~June 9.
+
+**Approach:** This Next.js demo is the reference implementation. ~70% of the component structure is directly reusable as a pattern guide. The Shopify build will replicate the experience in standard JavaScript/CSS/Liquid on top of Dawn, without a React framework.
+
+### Configurator — Correct Logic (differs from the demo)
+
+The current demo step order is wrong. Correct flow for the Shopify build:
+
+1. **Base** — mandatory
+2. **Mouthpiece** — mandatory
+3. **Connector ring** — mandatory, 1 per joint (auto-added per percolator added)
+4. **Percolator** — optional add-on, 0 to N allowed
+
+~90% of customers buy presets. Build-your-own is an important feature but secondary. Keep the guided flow simple and minimal — avoid choice overload.
+
+**Upsell placement:** Post-cart only. Do not surface upsells (extra percs, accessories, ash catchers) during the build flow — present them after the core build is in the cart. Email marketing is the primary upsell channel for repeat purchases.
+
+### Pages
+
+| Page | Notes |
+|------|-------|
+| Home | — |
+| Collections | Category filters, default sort |
+| Product Detail (PDP) | Reviews, product info |
+| Build Your Own | Configurator — see logic above |
+| Why Vitae | Absorbs "Why Choose Vitae Glass" from current site |
+| Blog | Index + single post template. Topics: cleaning guides, product/cannabis education, terpenes, releases, news, sustainability, buying guides. Featured/hero post if beneficial. **Note:** client wants "Our Story" and "Our Cause" as standalone pages, NOT blog posts (were likely set up incorrectly before) |
+| Wholesale | Light redesign of existing page; pop-up registration form stays as-is |
+| FAQ | Self-serve editable in Shopify |
+| Contact | Form + contact methods |
+
+### Out of Scope for v1
+
+- 3D product visualizer (stacked component preview) — needs 3D renders created first
+- Scroll-driven assembly animation — needs visual assets and adds build complexity
+- "Add to Build" CTA on PDPs — floated during discovery call, revisit after v1 ships
+
+### Guiding Philosophy
+
+Conversion-first. The main problem with the current Vitae site is navigation friction and difficulty finding products. This build solves that. Animations and visual enhancements are a future layer.
+
+> "Get it into people's hands, sell them more stuff later via email." — Joshua Hoffman
+> Apple analogy: flashy scroll animations belong on marketing/launch pages; PDPs and the shop should be clean and easy to buy from.
+
+### Confirmed Integrations & Tools (from client questionnaire)
+
+- **Reviews:** Stamped (already installed) — display on PDPs
+- **Loyalty:** Stamped loyalty program (already installed as app)
+- **Email marketing:** Klaviyo
+- **Live chat:** Rep AI (already installed as app)
+- **Analytics at launch:** GA4 + Meta (Facebook) Pixel. No TikTok Pixel. Heatmap tracking optional.
+- **Shopify:** collaborator code `3105`, store `vitaeglass.myshopify.com`, Lever Agency Partner ID 444843.
+
+### Brand Refresh Direction (differs from this demo)
+
+The demo uses monochrome Instrument Sans + Inter ("Laboratory Luxury"). The **Shopify build direction is warmer**: keep existing logo, introduce **earth-tone accent colors**, and add **serif heading contrast** (client likes **Newsreader** and **Red Hat Display**) over a sans-serif body. Avoid: dark smoke-shop aesthetic, neon, clutter, excessive animation, pretentious luxury. Design references: Yeti, Vessel, Patagonia, Apple.
+
+### Reference
+
+Full client answers: [`reference/client-questionnaire-responses.md`](reference/client-questionnaire-responses.md). Blank template: `reference/client-questionnaire.md`. Discovery call: `reference/call-transcript-05-20-2026.txt`.
+
+## Shopify Path (reference only)
 
 ## Commands
 

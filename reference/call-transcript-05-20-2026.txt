@@ -1,0 +1,401 @@
+Paul and Vitae
+Wed, May 20, 2026
+
+0:00 - Gordon Loi
+Hey, good. Good to see you in person or at least on the call.
+
+0:05 - Paul Scolieri
+Definitely, likewise. Yeah. So yeah, thanks for hopping on. You know, we've been kind of doing some middleman stuff through Joshua.
+
+0:16 - Gordon Loi
+We have to kind of chat face to face.
+
+0:18 - Paul Scolieri
+But yeah, we'd love to hear more about what you're looking to do. If I can be of help, we're glad to make recommendations or figure out the best the best path for you guys. So, you know, I've taken a look at the site, obviously. I know I sent you that demo. But you want to give me any other information that would be helpful?
+
+0:39 - Gordon Loi
+Yeah, I have just the same questions I had with Joshua about. So it's on the Dawn theme, right? I've been looking at new implementing new themes. Dawn was one of them. But I think the limit was very, it was a very basic setup, maybe didn't have all the stuff that we wanted. But I'm sure we could probably just build it all in. Right, there's a lot of custom stuff you can put in there. Um, yeah, it's just about how we can build it in the future. Once because the current site, I kind of built everything, so I know all the little parts, but as you build it, there's gonna be parts that I'm not aware of or don't know how to change it. Just hoping the transition would be easy. And easy to change updated in the future as well. Yeah.
+
+1:32 - Paul Scolieri
+So, with a lot of my clients lately, I'm building custom top of Dawn. So, Dawn is like the framework because it is Shopify's like kind of base level theme. And the great thing about it is that's really stripped down. And so, you don't have a lot of like, you're starting from like a really solid foundational point, but you don't have a lot of of uh like code bloat that might and we still allow you to go into the theme editor and you can make changes so that way like you don't need to come to me say to change the heading on my home page the type like the text of it and if you wanted to build additional say like components like the component for the configurator right like say down the road you wanted to build a different component we could build that and like you know integrate it in with that theme again you can manage some of the details of those components on the back end of Shopify and the admin piece. And so, yeah, that's usually the approach I would take to kind of keep things simpler. You know, we've gone the route of like trying to customize premium themes in the past, and it ends up just being messy to do so. It's this is just a little bit of a cleaner approach.
+
+2:43 - Gordon Loi
+Okay. Is it possible to build it on a different theme as well? I've been looking at another one I was trying to add into.
+
+2:51 - Paul Scolieri
+Well, yeah. So, like, I think you're the concept of theme, because we're building, we're basically building our own theme. We're just using Dawn as like that core level of Shopify functionality. And so, like, what you see for Don, you see like all these limitations with Don, but we're going to be building things on top of that to give you like, the things that you like from some of these other themes, like we basically are going to try to build that kind of tailored for you or pick and choose those features, right? But just building it on top of Dawn, essentially.
+
+3:22 - Gordon Loi
+Um, are we limited to Dawn? I've been playing a different one.
+
+3:29 - Paul Scolieri
+If there's a different out-of-the-box Shopify one, I mean, like, like I said, I think it's, I don't want to. Keep this focused on like Dawn because we're like we're building beyond Dawn essentially. Dawn is just like the starting point that we use really. If there's another theme that you're that you're eyeballing and that there's like because within Dawn, we're going to customize all the different components and style and pieces for you and your brand. So it's not even really going to look like what you're seeing Dawn out of the box. If there are other features that you like from other themes, you could flag those and we could look to incorporate them.
+
+4:08 - Gordon Loi
+Okay. Okay. In that case, I'll have a re-look at Dawn then, if it doesn't make too much of a difference. As long as in the end of the day, it's just smooth and fast. Yeah.
+
+4:23 - Paul Scolieri
+And yeah. So speed definitely is a key. And then, you know, we can build in some some of those like smoother transitions, you know, as well. So that way you get some of the animation stuff, I think, that you're that you're looking at too.
+
+4:40 - Gordon Loi
+Yeah, I've been looking into a lot of those. There's a lot well, a lot of ads have been shown my way. As you scroll, the page kind of just transitions and builds. It seems very interactive that way.
+
+4:54 - Paul Scolieri
+Yeah. I know Joshua had sent me like the pixel poppers thing that you had called out. So, you know, the more complex the animation, the more it adds complexity to the build, obviously, right? But, and also, like, I would just say a lot of those sites are really cool from a marketing site standpoint, but we want to try to build for like conversion first. And so the bells and whistles might look really nice, but at the end of the day, if the, it actually makes the use of the user experience on the site a little bit clunkier potentially, and it could slow down the site a little bit depending on what you want to implement because we're adding all these in. So I'm just going to put a word of caution out there. We can definitely add some smooth transitions, but just be just be intentional about them.
+
+5:48 - Gordon Loi
+um and so like just still focusing on like the ease of use from the customer standpoint right you get a high conversion rate on the site yeah yeah because the pieces are modular and I like to showcase that a little bit more so that was the idea behind the 3d version is about say let me find something And we can use this as an example. So, this is the bong, you have the base, a mouthpiece. The idea was as you scroll, the pieces scroll, they come apart and then they come and assemble. So, as you go, I was hoping we could show the piece expanding and assembling and then coming apart for cleaning, just to show the story and the product a little bit more.
+
+6:41 - Paul Scolieri
+I mean, that's totally doable. It is, again, it's probably gonna add to the scope and complexity of the film, and also need, we would need to get some of those visual assets or create them. So I don't know what your creative team or resources looks like if anybody has those actual image like videos of that customer. For 3D renders, because a lot of that is like 3D rendered objects. And we could probably have an artist create those assets too. So, like to show, but yeah, that's going to add expense because we have to just source that stuff to include. Because essentially, what that's doing is like it's showing like 3D rendered graphics, and as you scroll. It's progressing down the timeline of that video, essentially. And so it might make a 3D rendered video of your bong pieces and them coming apart and going back together or whatever. And then the user controls the speed of that video by the scroll. So it may be all together and they scroll down and then it comes apart. They scroll back up, it comes back together, right? So you're basically fast-forwarding back along the video timeline. And again, totally doable. We just need to have those assets created.
+
+8:00 - Unidentified Speaker
+I see. I see. Okay.
+
+8:02 - Joshua Hoffman
+Yeah. I had a blowout on one of my pages that we did. It was like a custom one for one of the things. And eventually, like here, we'll show you. We had to, we had to make the company programmed it, but
+
+8:25 - Unidentified Speaker
+You're right. Yeah, something like that.
+
+8:27 - Joshua Hoffman
+Yeah, we had to do that. But you see how it's not good for the website health. It does kind of look kind of cool, you know, but it showed all the different components. But, you know, I just want to say, I think that the pro I think the main problem is not. That people aren't seeing it in 3D. I think that there's just the current site has a lot of navigation and it slows and it's hard to find things even when I know I'm looking for them. I can't find them and it slows down the conversion. And I think that the outline that Paul made, the demo, kills all the noise without necessarily killing how your site looks. Like, that's one thing that's really interesting. The homepage, it's a preserved homepage. All the fat's cut. It's like a lean, mean homepage. And then it's when I get to the shop, I'm not like, it's not all these pull-downs. It's one bar at the top, and I'm just clicking through it and I'm getting the options. And when I go to build, it walks me through a step by step. It's not, it's like none, there's a lot of hand-holding built into the way that the page is designed that I think is high on conversion. And if I were to say what's more important, 3D or conversion, it's conversion. And so I think from a strategic standpoint, the website accomplished the biggest problem, which is navigation and leading to a purchase. And I think that the design does that. I think adding better graphics is something that would help. And it would definitely help when new products are released so that people could understand how this like fits in with their current thing. So it's like, oh, I already have the Swiss space and this top. Let me see what it looks like when I add the freeze perk in there. Oh, I got it. This is what my site, my setup would look like, Oh, let me change the rings. Okay, I like this. Let me purchase that. I think that that helps on that. But I just think that the main issue is the wayfinding and navigation. And I do think. That the site that Paul put together does precisely solve that. If I were to focus anything right now, I would want to focus the questions around like what other elements, like what are we missing from the conversion and the funnel that we would need to get from asset-wise that would strengthen this? That's what I think is like where it's going to get the most impact if we were to implement that site.
+
+11:05 - Gordon Loi
+Right, absolutely. Yeah. Conversion is definitely why I know it's like since we are changing it, why not make it as nice as we can?
+
+11:15 - Joshua Hoffman
+Budget, budget is the reason why. And because money is limited, I think our biggest problem is that when I go to the site or I send people to the site, they cannot easily find what they need. As quickly as they need it. And I think that's why, even though it's a modular site with a custom, 80% of what sells is the Voyager UFO, And I think it's because it's easy to buy that. We've made it easy to buy that. And it's just easy to click and buy that. And because a lot of other people bought it, it's easy, you know, they know it's the number one bestseller, they feel more secure. So I think that this site makes it easier for people to compare it. Instead of it being a little bit more kind of deep in. So, like, seeing as that we have a build your own and, but we sell a lot of stock, you know, I think that the site that Paul designed balances those two problems well.
+
+12:11 - Paul Scolieri
+And this doesn't say that you can't, like, we could obviously build more on top of this over time.
+
+12:16 - Joshua Hoffman
+Yeah.
+
+12:17 - Paul Scolieri
+Like, you can take bites, take bites of the elephant here. You don't need to be able to be like, let me design a let me make a $25,000 site right now. Let's build, let's do like, let's take the first step and get you something that's just, let's cleaned up. It's like simple, like Joshua was saying, easier to navigate. Let's get some data in. Are there other components we want to build out? If you guys want to invest in some of the visual assets to create those 3D renders, we can do that. We can add that in at a later date.
+
+12:43 - Gordon Loi
+Okay. Yeah.
+
+12:45 - Paul Scolieri
+Prohibit us from doing that.
+
+12:47 - Joshua Hoffman
+And I think that would be interesting is doing the conversion site. Seeing, like, putting one of those things to see where people are mapping on it, and seeing, like, okay, are people not clicking on the other things? Like, how, what, what's not happening? And then seeing what assets we could do from a visual standpoint to support that. I do know that the Tolstoy thing is a good thing, people can see that. In real life. And we have that in, we see, we have the tostoy seed in action. I think that that's helpful as like visuals go. But as someone that's done stuff with 3D, I just don't think it really converted as much as the page that compared us to other products. Cause that they're like, all right, now I know why I want to buy this. I that's and yeah, it's great to know that we're not prohibited from creating those 3D renders and creating that and getting that made and then moving that into the site as another way of presenting the visual.
+
+13:54 - Gordon Loi
+Okay, all right, as long as it's possible to add it on later, I guess that makes sense. Then, yeah. I haven't checked with those other sites yet, the pixel and all these other ones. I'm not sure how they're charging to implement those functions. Yeah, but it's probably on a different level, or yeah, they're not doing conversion, they just focus on the aesthetics of the site.
+
+14:18 - Paul Scolieri
+Then, well, I mean, it depends on the use case of the examples. Were like kind of pure marketing sites, which I noticed. And so there's not necessarily as much of an e-commerce element to that.
+
+14:36 - Gordon Loi
+Like I was going to look at their yeah, that's just one of those examples of COVID-19.
+
+14:43 - Paul Scolieri
+Right, like even their site itself, I'm on their site now. And I mean, I can just share the screen here. This is like their purely marketing-based site, right? And so they're kind of just doing this for the wow factor. Like as I scroll, you can see the things start to move, and then it goes forward. All of these elements are graphics that need to be made, assets that need to be made to accomplish this piece, right?
+
+15:16 - Unidentified Speaker
+So, you know, all this.
+
+15:20 - Paul Scolieri
+This is cool. I'm still scrolling here, right? And so now we're moving down. And this does look really cool. This is again, this is a marketing site. I think there's more room for these kinds of bells and whistles on this. And like I said, we sort of prohibit you from making this and us incorporating it somewhere in your marketing or on this website in particular. But I just don't want that. Don't lose the forest or the trees and get like, get just get hooked onto like all these very sleek. Marketing things when conversions are the conversions are the real goal right like you want to get sales and you know I I don't I think to josh's point too like this is this be the difference in why somebody buys your product or not I mean you guys can answer that I mean I would I would say no um personally you know but that's just me um I think it could be a great visual asset for you to include in marketing and push on social and do other things too in the future that just like looks cool. But we want to design for conversion first for sure.
+
+16:29 - Gordon Loi
+Yeah. Okay.
+
+16:30 - Joshua Hoffman
+Yeah. I actually think it'd be interesting because you're like, this is better for marketing. And I see why, like, for experiences or like services, but if we were to launch a product. We could do a landing page, which is all like bells and whistles and movement, which lives for the launch, and then eventually it transitions to the static PDP because at the end of the day, people need that all the time to purchase. But it's when you introduce something new, you can have a landing page that does a great job explaining it, and then it transitions to a PDP. I think that that's the best way to use that. So it's like new product, it's spinning, it's all over, it's lighting things on fire, it's landing. And then it's like learn or buy here, and you click there, and it's like a normal PDP, and they buy it from that page.
+
+17:17 - Paul Scolieri
+Because what everybody's grabbing this from is like, this is like what Apple does when they do release.
+
+17:21 - Joshua Hoffman
+This is what Apple does, right?
+
+17:23 - Paul Scolieri
+But if you go to apple.com, where they actually want you to buy stuff, you notice that there's none of that stuff there at all, right? This is like, this is an e-commerce. Website. They want you to go and buy a MacBook, and so this is a PDP page that they have that looks very similar to kind of like some of the stuff that we're you know building here. There's not all these animations here, but if you go to the marketing page for the new iPhone, you'll see all those cool like things. It's a marketing tool more than a conversion tool.
+
+17:56 - Gordon Loi
+Okay, all right, yeah. Yeah, as long as.
+
+18:00 - Joshua Hoffman
+Just to show, like, just to compare that, here's my screen I'm sharing. Here's what happens if you Google search MacBook Pro. They send you to this. Right. And this is like, this is the motion page.
+
+18:12 - Unidentified Speaker
+Right.
+
+18:13 - Joshua Hoffman
+You know, but this only lit, this only works. This only, this is a funnel technique.
+
+18:19 - Paul Scolieri
+If I go to buy this thing, it's going to send you to their product page.
+
+18:25 - Joshua Hoffman
+You see? So. Making solid product pages is like the foundation, and then we can, if we do, we could do some interesting landing page marketing, right?
+
+18:34 - Gordon Loi
+Yeah, so all right, okay, all right. Uh, as long as there's a site, the current site that I have now, I think it's like uh twenty what twenty twenty or twenty. Style version, you it's it's I feel it's like 10 years behind the current one that now. Since in 2026, I'd like just the site to be it look futuristic, or you know, goes with the time and be modern as we go because it's I'm probably gonna use it for the next like four to five years. So hopefully, we just you know keep it looking a little bit modern and not outdated. I feel the way we have it now is very outdated. The one that I have now, yeah.
+
+19:23 - Joshua Hoffman
+Now I know where this comment's coming from I never understood where you were like, why you were saying this? Why is Gordon focused on this? Now I know why. Got it.
+
+19:31 - Gordon Loi
+Yeah, the video is good. Did you create that, or did you find the video from some cool?
+
+19:40 - Paul Scolieri
+There's some cool AI tools where you can make stuff like this. I can make like a short video from still images, and it'll kind of like kind of zoom in and out or just give the idea of some motion and rotate. So I was able to do this, you know, fairly straightforward.
+
+19:56 - Gordon Loi
+Yeah, okay.
+
+19:59 - Paul Scolieri
+Yeah, I mean, in terms of style, I wanted to design this with like a kind of an architectural feel, minimalist, so it is a more classic style, but you know. Styles of websites change. Like, you to give a fresh update, we're kind of building this in a way where you could be like, Hey, to update this page for and like give this a fresh new style. We want a different font type. We got a new brand guide, we got logo type, like any of that stuff that you create. And then we could implement this and kind of give the give the site a makeover with some of the new style guidelines that you might have. It definitely helps to have that. Direction. This is more Joshua's realm, but if you're going a rebrand and you have a company, like an agency that's going to give you new typography style guides and everything, we can easily grab that information and incorporate it into the site. But it's usually the order of operations: you would kind of do that style work, and then we would incorporate that into the site, and it would get incorporated into all your. Your social presence and everywhere else that have presence online.
+
+21:10 - Gordon Loi
+Okay, I see. All right. Yeah, can you go through this site a little bit more? Sure.
+
+21:18 - Paul Scolieri
+Yeah, and this is, you know, again, like I grabbed some stuff from your current site. So, like, this is by no means like a finished product by any means. Just wanted to give you kind of like a demo. So, like I said, I made this, I made this video. Here just to like give you some background motion. We've got a nice headline. Um, I think we got a sans serif typeface, very architectural and kind of minimal. Um, and then you've got your logo scroll. I thought that was useful to keep everything where you're featured. The whole, from me as an outsider, it really seems like the whole where you're where you want people to go is this build your own route, like this curator piece, and that's kind of what I wanted to show off. Anyway, so there's a lot of highlighting of that feature set, right? Even in the menu, kind of build your own, start building. Here's like the four-step process in the build. And then we have your like your bestseller like collection here, right? So then if somebody does go to, they want to build their own. So like we built this page custom word, this to try to make it straightforward for people to walk them through step by step. I give even like some information along the way of like why we're building it this way. Again, grabbing this from your site, right? So, here's some information: mouthpieces, here's straight tubes. I thought this was useful, right? I'm not a big smoker, so I don't really know. Straight tubes affect airflow. Well, shaped ones pull, I think that's useful for somebody that's building this, right? So, they would select. And go next. And then, you know, what's the next step in the process? It's the percolator. And here's some information about the percolator and why you do things.
+
+23:00 - Gordon Loi
+Is there any product information click on one of the images or it's just image-based right now?
+
+23:07 - Paul Scolieri
+Right now, this is just image-based, but if you want to display some information, I'm sure we can in a way that makes sense. You know, what are you thinking like the product description would be?
+
+23:19 - Gordon Loi
+Yeah, like a product description or maybe a little bit more about the product versus just building it based off of an image. Would you need some kind of description or even a chart that we could use like, oh, which one's like a rating, right? Easy to clean. It's on a scale of four to five.
+
+23:37 - Unidentified Speaker
+Durability.
+
+23:39 - Gordon Loi
+It's, you know, give it those different ratings for the items.
+
+23:42 - Paul Scolieri
+Do you have that information available currently on your site?
+
+23:46 - Gordon Loi
+No, we don't, but with the product description, we have, but that's that might be too long, I guess.
+
+23:51 - Paul Scolieri
+I mean, if you come up with, I think it'd be better to do it shorter that way. Like, instead of using keyword tags that you're just kind of mentioning, I would need you to do that legwork in advance and be like, okay, this item has, it is, you know, whatever, whatever the key components are easy to clean. Durable, whatever that is. If you want to give that, then we can kind of display that information as they click through in a creative way. We could add that as like meta fields potentially on the product itself and then display the key pieces. So, yeah, that's that's doable there. And then you have the base and the connector. So it's just like, so now basically what this would do is send all This doesn't work obviously, but this would send all of these as four individual products to their cart. Right.
+
+24:50 - Gordon Loi
+The one issue with this is not this is essentially a three-piece build with well three-piece because there's three class, the base, the mouthpiece, and then the perk. The standard build is a two-piece. And then the maximum build is unlimited. So it's not limited to just three or four or five. How do we piece, just a base and a mouthpiece? So majority of people start with that because it's the most affordable piece. It's just a base and a mouthpiece. Now we have. An extra perk, which is a lot of people to start on the three-piece set because that's basically two bongs in one. But a majority of people go for just the two-piece. So adding a perk is kind of like an actually optional item.
+
+25:47 - Paul Scolieri
+So does it make sense? Does this order make sense? Would it make sense to start with the mandatory items?
+
+25:56 - Gordon Loi
+base, and connector would be the most mandatory, the most basic one. The percolator would be like an optional add-on. And then you can actually do a second percolator or third percolator or fourth percolator. Obviously, not everyone goes to that crazy, but the percolator should be kind of like an optional add-on or an option where they can just remove it if they don't want it. Because then it creates a build now with closer to $500. Whereas a normal bill would be two to three hundred dollars.
+
+26:27 - Paul Scolieri
+Got it. So, I could see a world where this gets reordered a bit, where it's like the mouthpiece, the base, the connector. And then there's an optional percolator step. You have this complete your build item. You know, this complete your build item could be show up after you get to the after you get these first three. And then, you can add the connect, add the percolator. Now, in terms of just like adding many, I need to think about that. It looks like you could probably do something where you could do multiple selects here. You could say, like, percolator, like add as many variations as you want, or, you know, whatever, something like that. So they could select multiples to add to their build. That's kind of just off the cuff, maybe how I would treat that.
+
+27:24 - Gordon Loi
+And then connector rings as well. Like if it's a two-piece set, you only need one connector ring, where the more perks you have, for every extra perk you have, an extra connector ring. So maybe that is something we have to automatically build in as well.
+
+27:39 - Paul Scolieri
+Yeah. So again, like, you know, each level of this kind of complexity that you just introduced to this process adds complexity, a little bit of complexity to the build process. And so I don't know if, like, can, is there a thinking about conversion to it, not confusing people, like giving them like the step-by-step process that's easy to understand and like straightforward is probably like the best baseline. You could always do some upsells. Even on the cart page or somewhere else. That's like a pop-up or something. Once they complete their build, it can be like, hey, many people also add like different percolator options or different connector rings or whatever else, and like give them some choices there as an upsell piece, but you want to capture the original piece because instead of them just getting. Oh, let me add this, let me add this, let me add this, and now all of a sudden the bill is a thousand dollars. And they're like, I'm, you know, gonna bail. Just kind of keeping them in that nice, straightforward process without too many choices because people get choice overload, right? And then getting them to get to the ad and check that out. Um, I wouldn't want to mess with that like too, too much. Uh, but I don't know what part of your how much of your business people do add on all those extra items, yeah.
+
+29:01 - Gordon Loi
+Not a not a large. Portion of it. Well, majority of people buy the presets.
+
+29:06 - Unidentified Speaker
+Right.
+
+29:06 - Gordon Loi
+Like 90% of people just buy, oh, this one's pre-built. Just click that and that's it.
+
+29:11 - Paul Scolieri
+Yeah, that's right. Okay.
+
+29:14 - Gordon Loi
+But those who build it themselves often land in a situation where they don't have enough rings or they don't have the right components because they think, oh, I just bought the place and the mouth beats. I'm good. And then they forgot about, oh, you need the rings, you need the folds, you need everything else in between.
+
+29:30 - Paul Scolieri
+Well, yeah, I think we can make this so there are mandatory pieces of this, of the build to get them to like a working build. And then there's add-ons that are optional, you know, on top of that. But my advice would probably be let's build the base of this first and like see how it's working. And then you guys can maybe see how people are using it and what ways that the customer might maybe use it better, or we could upsell and do some of those other things. Kind of again, take it like bit by bit here.
+
+30:02 - Joshua Hoffman
+Yeah, I think the builder is about getting a base, a perk, a mouthpiece, right? Even though they don't need the mouthpiece, we'd want to position it. They have to say they don't want it. But then, after they build that, there's a way to position, add another percolator and a ring for this much to your setup. Like, there's ways to get them to buy, or hey, turn this into a dab kit. You know, turn your purchase into a dab kit by buying the dab kit thing. So, I think it's about post-assembly position. So, once they once they add it to their cart, then there's the like, hey, have you thought this, and this? And that's where I think we get them to buy another percolator or a conversion kit or a different thing. But I think the core, like looking at the sales on Shopify and like looking at what people buy, most people buy those four core components or the two of the four components, counting the rings as part of the thing. And then we see them buy ash catchers and other mouthpieces like later. So I think it's really positioning it in their hand. They know they're buying something modular. The best thing we could do is two months later saying, We hope you're happy with your purchase. Here's a new percolator. Here's a different mouthpiece. Here's another accessory. Like there's other ways to get them to purchase that aren't just at the website. With your system, because it is something that is modular, what we're trying to do is just get them to take something home now so that we can sell them more stuff later. And if we try to get them to buy everything now, they're get scared away because it's too big of a purchase what to do is make the first purchase seamless and easy and then hit them up with email and performance marketing to get them to come back and buy more things but if we get them out the door happy and quickly with what they need they're going to come back yeah yeah I echo that because the product's good I literally put away my other bonds I talked to chrissy about this too I don't have other bongs out anymore I just have vtai Like they don't, like, I just don't. So even it's like, I it's like the hairclub guy, right? But like, I literally, like, it's, it's one things. Like, once one, yeah, I'm I don't need other bombs. Like, I just, I just put, like, it colder. I go grab the perk. I put it on. I have a thing. I want a flower thing. I put the flower thing. I take it. Like, it's just, I, I have one bomb now. So we just need to get it into people's hands and they stop using other glass.
+
+32:23 - Gordon Loi
+Yeah. Yeah. Okay. All right. Okay. Is there also a way? Because we've been trying, or I've been trying to do a configurator, right? A 3D configurator is where you actually see the entire thing built as you built it. So now we have, so complete your build, we the four pieces, but we don't have a visualization of how that piece would look. If I give you cutouts of every individual piece, is it possible to? To do a visualization image? All those things stacked together?
+
+32:59 - Paul Scolieri
+I mean, is it anything possible? Yes. But in terms of the scope and complexity of this build, it probably doesn't fit within this budget for this particular version of it. I would say, again, you're probably your best bet, depending on not necessarily the images, but we probably need those 3D renders of each other component that we can then. Compile there. I need to give that some thought. I mean, it's definitely doable. I'm just thinking of like trying of the best approach. Right. Even if it's not 3D, if it's static images, they all TBD because some of the shapes are different, right? For each of these.
+
+33:36 - Gordon Loi
+They're all interchangeable.
+
+33:38 - Paul Scolieri
+Sure. But like, the shape of this, and it's possible. Yeah. I. I have to think about.
+
+33:45 - Gordon Loi
+Because the thickness of it, you see the cap and the ring, they're all the same width. So they're all basically just stack top of the other one.
+
+33:54 - Paul Scolieri
+Yeah. I just mean like this shape is different than that. See what you're saying. So like basically each, there's like maybe there's an image that's split into thirds or fourths, different pieces. I have to think about the best approach to do it. With an actual image and like getting them all to line up, right? Basically, we don't have to like pre-create that way, we'd almost have to pre-create every combination, which is a lot. The 3D rendering could be easier. I just need to think about the best approach for it. I don't have the right answer for it. It's doable, but again, it's adds some serious complexity to the pre-creating is.
+
+34:38 - Gordon Loi
+challenged because there's basically hundreds of combinations.
+
+34:41 - Unidentified Speaker
+Exactly.
+
+34:42 - Gordon Loi
+So the way is a mouthpiece would always the top, the base would always be bottom and then if you have percolated then it goes in the middle, I guess.
+
+34:51 - Paul Scolieri
+Right, but there's different sizes of these two, like they're they give different heights and so like making those all right together is um visually so it actually looks right is a question mark. It probably something we need a we need a designer to come in and help us create. It would be my gut there.
+
+35:13 - Joshua Hoffman
+I also think that again, purchases around 300 don't need the visual. When people start stacking five things together and seeing they want to see it, then they're like, okay, this is what I'm buying. I'm spending 500 on this. I think that car companies get away with it because they can change the color. You like other brands have it easier because they're just changing color. Because we're changing size and dimensions and stuff, it does make it trickier. But I do think that, like, I think it again, making the person be able to understand what they're purchasing along the way and why they're purchasing it is, I think, more impactful than them seeing it all together at once. And if I were to put on that order of operations of importance, it would be. Simplifying the ease of purchasing and then coming back and being like, okay, now that we've simplified it, what we're going is we show, okay, here's the thing made at and here's a 3D and stuff. And that those things would add and probably help push higher, like higher ticket purchases. But I think to get the core customer, we just need to focus on that core conversion around the two and three-piece product that sells the most.
+
+36:24 - Unidentified Speaker
+Yeah.
+
+36:24 - Paul Scolieri
+And again, this is all something we could then build at a later date, too. Like we can work towards that. It's something we probably to do it right. We probably would need to involve either a graphic designer or a 3D designer, somebody in that world to kind of get us the right assets that we can plug in for display on the website.
+
+36:46 - Gordon Loi
+Okay. So a best way forward with that is the 3D rendings, 3D rendering, yeah.
+
+36:51 - Paul Scolieri
+I think it's probably the better approach. Um, but again, it's something we probably need to do a little bit of research on, right?
+
+36:59 - Joshua Hoffman
+Figure out cool, right?
+
+37:02 - Joshua Hoffman
+All right, thank you for your time, Paul.
+
+37:05 - Unidentified Speaker
+Yeah, you're welcome, of course.
+
+37:07 - Paul Scolieri
+You know, you guys, you guys can talk about it. Let me know. Um, I told Joshua this too. Like, you know, my wife's expecting a baby any three weeks.
+
+37:16 - Gordon Loi
+Congratulations, yeah.
+
+37:17 - Paul Scolieri
+Um, thank you, appreciate it. But, uh, so, like, you last night she had to go. She was having some cramping. Luckily, nothing, nothing happened. But my timeline's a little bit crunched for that. I would love to help you out with this. But just like, just want to put that out there that it's like, I've got that. Once that happens, I'm kind of taking a week or two off.
+
+37:36 - Gordon Loi
+Oh, yeah, absolutely. Yeah.
+
+37:38 - Paul Scolieri
+You know, for a bit. So, but otherwise, if you're if your timeline's not like super rushed, but love to help you out with this over the next you know month or so.
+
+37:47 - Gordon Loi
+Okay.
+
+37:49 - Unidentified Speaker
+Yeah.
+
+37:50 - Gordon Loi
+I think at this point it is something that we do need. So might as well. Yeah. Yeah, the theme is long overdue.
+
+38:01 - Unidentified Speaker
+Yeah.
+
+38:02 - Paul Scolieri
+I mean, it'll give you a nice, a nice facelift. And then I'm hoping that this just the build your own like as a nice big feature update for you that improves the user flow for everybody. And then again, building this in a way we can build on top of it. I think that's why my preference is to kind of build this custom theme on top of Dawn is because then we want to build more stuff. We just build on top of it. If we have, we buy a premium theme and then we want to build our stuff, it becomes really hard to plug other things in and build more.
+
+38:33 - Gordon Loi
+Okay.
+
+38:35 - Paul Scolieri
+Cool.
+
+38:36 - Unidentified Speaker
+All right.
+
+38:36 - Paul Scolieri
+All right, guys. Yeah, I mean, let me know, and then we can, you know, if you want to. Kick things off here, you can dig in, okay?
+
+38:47 - Gordon Loi
+And just besides the building part, okay, so we've got the conversion part down, and what at the rest of the site you're going to give a refresh as well, like also just uh, yep, about us, yeah.
+
+38:59 - Paul Scolieri
+Yeah, so I kind of renamed this like Y V Tay. We could use different images here, obviously, but just kind of um, you know, uh, simplifying where we can, I added. Did you have an FAQ? If not, I added an FAQ. So, like, instead of, what'd you say? Sorry?
+
+39:17 - Gordon Loi
+I think I had a basic one. The FAQ always changes. So I don't know.
+
+39:21 - Paul Scolieri
+Right. Would this be opportunity for us to refresh it? Yeah. Refresh and just add it in one section and find information there. Or what else? Product page. You know, we could, again, we can improve this. This was, I just kind of wanted to get like a demo where I didn't put every single detail in there, but we can add some more information here. Um, that might make sense. I think the next step would be, for you, for us to, um, you know, I could even give you like a little questionnaire to fill out about like how you're. Looking for and some of the details on some of these pages. And then I already kind of built this demo so that we can, as long as we can tie down like the full scope, I already think we're pretty close to there, just so we're on the same page. And then once. You know we both are agree on that, I can start to put this together, right?
+
+40:15 - Gordon Loi
+What's the difference between so add to cart as is add to cart add to build? Where does it go?
+
+40:22 - Paul Scolieri
+Uh, so cool. So, this could go to um basically, and I didn't fully configure this feature yet, but I guess the theory would be if you're looking at this mouthpiece individually, it could go and go to the build your own page and it would add it to the build component. I don't know if that's useful or not, but I thought that could be an interesting.
+
+40:46 - Unidentified Speaker
+That's only if someone is on the build.
+
+40:49 - Paul Scolieri
+If someone's buying a pre set, then if they add to the build, it wouldn't add to the build, then it would only be for like individual components that would contribute to a build, right? So maybe. And if it doesn't make sense to add, we can remove it.
+
+41:05 - Gordon Loi
+Yeah, we'll revisit that.
+
+41:07 - Paul Scolieri
+Okay, but yeah, it could be just like, oh, a nice upsell. Like, to build, to add this to my full, my full, components here. So that's just the thinking behind it.
+
+41:19 - Gordon Loi
+Okay. So that's good. All right. What's the timeline you said if we were to move forward?
+
+41:27 - Paul Scolieri
+It's probably going to be. Done some point later in June. June. Okay. You know, June. Right.
+
+41:35 - Gordon Loi
+I mean, like, it's almost June already.
+
+41:39 - Paul Scolieri
+I know. Well, that's the thing. I'm like, kind of like, my timeline right now is unfortunately fuzzy. Normally, I'd try to give you a harder timeline, but I just need to figure the baby stuff out first. So, like, it would probably be, if you want to get started sooner than later, we could do some work beforehand. I could kind of get things rolling. I just can't commit to delivering it before this, like, uh, the baby due date, which is June 9th, right now. Um, so yeah, yeah, absolutely.
+
+42:06 - Joshua Hoffman
+Yeah, it gets busy right after the baby comes out, yeah. No, we have kids, so like when we know we're not silent because we're like, Yeah, we don't have to do that.
+
+42:16 - Paul Scolieri
+So, yeah, I know. I'm like, uh, we were debating whether to go back into the trenches here, but yes, here we are. Um, turn it over. But yeah, it'd probably be like in that later June or early July timeframe, like assuming like I planned to take like one to two weeks off the date.
+
+42:33 - Gordon Loi
+You should, yeah. I think probably two weeks. Yeah.
+
+42:36 - Paul Scolieri
+One week is not quite enough. Yeah. Okay. Okay.
+
+42:43 - Gordon Loi
+All right.
+
+42:43 - Gordon Loi
+Okay. I think, yeah, we got some questions out the way. And then, yeah, this kind of does make sense. And I think. I guess we should budget for it and then get something rolling then. Cool.
+
+42:59 - Paul Scolieri
+Okay. Yeah, that sounds good. I can, if you, I mean, if you want to go now, I can kind of get you a like a firm proposal and everything sent over to you if that helps. And then with like a scope outline.
+
+43:14 - Gordon Loi
+Yeah, that's putting the scope then. Also maybe a questionnaire to see what we want to put in, what we want to take out, and see how that changes the scope. And then, yeah, to make sure we're on the same page, and then, yeah, before we go through the full bold, yeah, make sure everything's aligned, and then, yeah, and then obviously, conversion optimized is the key, I guess, for now.
+
+43:37 - Paul Scolieri
+Yeah, all right, I'll get the questionnaire and stuff sent over for you so you can kind of start thinking through that.
+
+43:43 - Gordon Loi
+Okay, all right. All right. Yeah. Yeah. Thank you, Paul.
+
+43:46 - Paul Scolieri
+All right, guys. We'll see you later.
+
+43:48 - Gordon Loi
+All right. Thank you.
+
+43:51 - Gordon Loi
+All right.
