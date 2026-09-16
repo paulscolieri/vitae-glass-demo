@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitae Glass - September Feedback Updates</title>
+<style>
+  :root { --ivory: #f6f1e8; --sand: #d8c3a5; --clay: #6a7f99; --ink: #3b5366; --line: rgba(59,83,102,0.16); --olive: #5c6e83; --red: #b3413a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ivory); color: var(--ink); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.05; margin: 8px 0 12px; }
+  h2 { font-size: 26px; margin: 0 0 6px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--clay); margin: 0 0 4px; }
+  .lede { max-width: 820px; color: rgba(59,83,102,0.8); }
+  .brand { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 20px; margin-bottom: 36px; border-bottom: 1px solid var(--line); }
+  .brand__logo { width: 128px; height: auto; border: 0; border-radius: 0; background: none; }
+  .brand__client { font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(59,83,102,0.6); }
+  .toc { max-width: 860px; padding-left: 22px; columns: 2; column-gap: 32px; }
+  .toc li { margin-bottom: 4px; break-inside: avoid; }
+  .toc a { color: var(--ink); }
+  .toc .open::after, h2 .open { display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--red); color: #fff; font: 700 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; vertical-align: middle; }
+  .toc .open::after { content: 'Open'; }
+  @media (max-width: 700px) { .toc { columns: 1; } }
+  .item { border-top: 1px solid var(--line); padding: 40px 0 8px; margin-top: 40px; }
+  .item.is-open { border-left: 4px solid var(--red); padding-left: 20px; }
+  .item p { max-width: 860px; }
+  .req { background: var(--sand); border-radius: 8px; padding: 14px 18px; color: rgba(59,83,102,0.9); max-width: 860px; margin: 10px 0 22px; }
+  .flag { border: 1px solid var(--red); background: rgba(179,65,58,0.06); border-radius: 10px; padding: 14px 18px; max-width: 860px; color: var(--red); font-size: 15px; margin: 0 0 18px; }
+  .flag strong { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; display: block; margin-bottom: 4px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 18px 0 28px; }
+  .pair.single { grid-template-columns: minmax(0, 1fr); }
+  .pair.narrow { max-width: 860px; }
+  @media (max-width: 800px) { .pair { grid-template-columns: 1fr; } }
+  figure { margin: 0; }
+  figcaption { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px; }
+  figcaption.before { color: rgba(59,83,102,0.5); }
+  figcaption.after { color: var(--olive); }
+  figcaption small { display: block; font-weight: 400; letter-spacing: 0; text-transform: none; font-size: 13px; margin-top: 2px; color: rgba(59,83,102,0.7); }
+  img, video { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .phone { max-width: 320px; }
+  .note { font-size: 14px; color: rgba(59,83,102,0.7); max-width: 860px; }
+  .howto { border: 1px solid var(--line); border-radius: 10px; padding: 20px 24px; margin: 24px 0 8px; max-width: 900px; background: rgba(255,255,255,0.5); }
+  .howto h3 { font-family: Georgia, serif; font-weight: 500; font-size: 18px; margin: 0 0 12px; }
+  ol.steps { padding-left: 22px; max-width: 860px; }
+  ol.steps li { margin-bottom: 8px; }
+  .foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: rgba(59,83,102,0.6); }
+  .foot img { width: 96px; height: auto; border: 0; border-radius: 0; background: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="brand">
+    <img class="brand__logo" src="media/lever-logo.png" alt="Lever Agency" width="128" height="30">
+    <span class="brand__client">Prepared for Vitae Glass</span>
+  </header>
+  <p class="eyebrow">Feedback round · September 15, 2026</p>
+  <h1>Your nine notes: before and after</h1>
+  <p class="lede">
+    All nine are live on the preview theme now, each with a before and after below.
+  </p>
+  <ol class="toc">
+    <li><a href="#concentrates">Concentrates collection</a></li>
+    <li><a href="#rating">Star rating beside the price</a></li>
+    <li><a href="#video">Product video placement</a></li>
+    <li><a href="#overlap">Mobile: overlapping words in a review card</a></li>
+    <li><a href="#square">Rectangle where a square should be</a></li>
+    <li><a href="#sorting">Sorting beside the filters, sorting first</a></li>
+    <li><a href="#ribbon">Pre-order as a diagonal ribbon</a></li>
+    <li><a href="#header">Build Your Own button in the header</a></li>
+    <li><a href="#inspiration">"Need some inspiration" images cut off</a></li>
+  </ol>
+
+  <div class="item" id="concentrates">
+    <h2>1. Concentrates collection</h2>
+    <div class="req">Your request: a collection for concentrates (The ARC Mouthpiece, Aura Banger Set, Aura Reclaim).</div>
+    <p>
+      A new Concentrates collection holds The ARC Mouthpiece, the Aura Banger Set and the Aura Dab Reclaim Catcher, and
+      it is wired in exactly like the other categories: a Concentrates tab on Shop All (between Ashcatchers and
+      Bundles) and a Concentrates entry in the Shop menu. Adding a product to it later is a normal collection edit in
+      Shopify admin (Products, Collections, Concentrates); the tab and menu pick it up automatically.
+    </p>
+    <div class="pair">
+      <figure><figcaption class="after">Shop All, Concentrates tab</figcaption><img src="media/concentrates-after.png" alt="Shop All with a Concentrates tab selected"></figure>
+      <figure><figcaption class="after">Shop menu</figcaption><img src="media/menu-concentrates-after.png" alt="Shop dropdown with Concentrates"></figure>
+    </div>
+    <p class="note">The store also has an "Aura Banger DAB Set" (a different product from the Aura Banger Set) and the dab bundles; say the word and they go in too.</p>
+  </div>
+
+  <div class="item" id="rating">
+    <h2>2. Star rating beside the price</h2>
+    <div class="req">Your request: bring the star rating next to the price on the product page.</div>
+    <p>
+      The product page now shows the star rating and review count right after the price, on the same line. It uses the
+      same review data as the product cards, links down to the reviews, and hides itself on products that have no
+      reviews yet so there is never an empty row of grey stars.
+    </p>
+    <div class="pair">
+      <figure><figcaption class="before">Before</figcaption><img src="media/pdp-info-before.png" alt="Product info column without a rating"></figure>
+      <figure><figcaption class="after">After</figcaption><img src="media/pdp-info-after.png" alt="Product info column with stars beside the price"></figure>
+    </div>
+    <div class="howto">
+      <h3>How to turn it off or on</h3>
+      <ol class="steps">
+        <li>Online Store, <strong>Edit theme</strong> on the draft theme, page selector to <strong>Products</strong>, <strong>Default product</strong>.</li>
+        <li>In the left sidebar open <strong>Product information</strong> and click the <strong>Price</strong> block.</li>
+        <li>Tick or untick <strong>Show star rating beside the price</strong>, then <strong>Save</strong>.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="item" id="video">
+    <h2>3. Product video placement</h2>
+    <div class="req">Your request: bring the product video up, under the Buy it now button or below the shipping and tree callout bar.</div>
+    <p>
+      The product video on each page is embedded inside the product description, which put it far down the column in a
+      small bordered box. It is now lifted out of the description into its own slot directly below the callout bar,
+      sized to the full width of the column, and the description keeps the rest of its text. This happens automatically
+      on every product whose description contains a video, and products without one show nothing extra.
+    </p>
+    <div class="pair">
+      <figure><figcaption class="before">Before<small>Video inside the description, well below the fold.</small></figcaption><img src="media/video-before.jpg" alt="Video in a small box inside the product description"></figure>
+      <figure><figcaption class="after">After<small>Video under the callout bar, full column width.</small></figcaption><img src="media/video-after.jpg" alt="Video under the callout bar"></figure>
+    </div>
+    <div class="pair narrow">
+      <figure class="phone"><figcaption class="after">After, on a phone</figcaption><img src="media/video-mobile-after.png" alt="Video slot on mobile"></figure>
+    </div>
+    <div class="howto">
+      <h3>How to move it</h3>
+      <ol class="steps">
+        <li>Online Store, <strong>Edit theme</strong>, page selector to <strong>Products</strong>, <strong>Default product</strong>.</li>
+        <li>In the left sidebar under <strong>Product information</strong>, drag the <strong>Product video</strong> block up or down (for example directly under Buy buttons), then <strong>Save</strong>.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="item" id="overlap">
+    <h2>4. Mobile: overlapping words in a review card</h2>
+    <div class="req">Your feedback: on mobile there is a weird word overlap.</div>
+    <p>
+      On phones, a longer review's "Read more" link was landing on top of the "Share" control. The bottom row of each
+      review card (Share, Was this helpful) now flows underneath the text instead of being pinned to the bottom edge,
+      so nothing can collide however long the review is.
+    </p>
+    <div class="pair narrow">
+      <figure class="phone"><figcaption class="before">Before</figcaption><img src="media/mobile-review-card-before.png" alt="Review card with Read more overlapping Share"></figure>
+      <figure class="phone"><figcaption class="after">After</figcaption><img src="media/mobile-review-card-after.png" alt="Review card with Read more above Share"></figure>
+    </div>
+  </div>
+
+  <div class="item" id="square">
+    <h2>5. Rectangle where a square should be</h2>
+    <div class="req">Your feedback: there is a rectangle box where there should be a square.</div>
+    <p>
+      This was the "Compatible with this piece" row on the product page: each product sat in a tall rounded frame with
+      a small square image floating in the middle. The frames are now square and hug the image, on desktop and phone.
+    </p>
+    <div class="pair">
+      <figure><figcaption class="before">Before, desktop</figcaption><img src="media/compatible-desktop-before.png" alt="Compatible products with tall frames"></figure>
+      <figure><figcaption class="after">After, desktop</figcaption><img src="media/compatible-desktop-after.png" alt="Compatible products with square frames"></figure>
+    </div>
+    <div class="pair narrow">
+      <figure class="phone"><figcaption class="before">Before, on a phone</figcaption><img src="media/compatible-mobile-before.png" alt="Compatible products on mobile with tall frames"></figure>
+      <figure class="phone"><figcaption class="after">After, on a phone</figcaption><img src="media/compatible-mobile-after.png" alt="Compatible products on mobile with square frames"></figure>
+    </div>
+  </div>
+
+  <div class="item" id="sorting">
+    <h2>6. Sorting beside the filters, sorting first</h2>
+    <div class="req">Your request: could the sorting be on the same side as the filter and price, with Sorting first.</div>
+    <p>The collection bar now reads Sort by, then Filter (Availability, Price), grouped on the left. The product count keeps the right edge.</p>
+    <div class="pair single">
+      <figure><figcaption class="before">Before</figcaption><img src="media/facets-bar-before.png" alt="Filter bar with sort on the right"></figure>
+    </div>
+    <div class="pair single">
+      <figure><figcaption class="after">After</figcaption><img src="media/facets-bar-after.png" alt="Filter bar with sort first on the left"></figure>
+    </div>
+  </div>
+
+  <div class="item" id="ribbon">
+    <h2>7. Pre-order as a diagonal ribbon</h2>
+    <div class="req">Your request: move the Pre-order sign and make it a diagonal (45 degree) ribbon in the top right.</div>
+    <p>
+      Wherever the Pre-order marker appears it is now a 45-degree corner ribbon in the top right: on product cards
+      across the site, and on the main image of the product page. The Pre-order button and the made-to-order note are
+      unchanged. Sale and Sold out badges keep their existing style.
+    </p>
+    <div class="pair narrow">
+      <figure class="phone"><figcaption class="before">Before</figcaption><img src="media/preorder-card-before.png" alt="Product card with a Pre-order badge bottom left"></figure>
+      <figure class="phone"><figcaption class="after">After, product card</figcaption><img src="media/preorder-card-after.png" alt="Product card with a Pre-order corner ribbon"></figure>
+    </div>
+    <div class="pair narrow">
+      <figure><figcaption class="after">After, product page image</figcaption><img src="media/preorder-pdp-after.png" alt="Product page image with a Pre-order corner ribbon"></figure>
+    </div>
+  </div>
+
+  <div class="item" id="header">
+    <h2>8. Build Your Own button in the header</h2>
+    <div class="req">Your request: give the Build Your Own button in the top bar the rounded corners the other buttons have.</div>
+    <p>It now uses the same corner radius as every other button on the site, so if the button roundness is ever changed in the theme settings, this one follows.</p>
+    <div class="pair narrow">
+      <figure><figcaption class="before">Before</figcaption><img src="media/header-nav-before.png" alt="Header navigation with a square-cornered Build Your Own button"></figure>
+      <figure><figcaption class="after">After</figcaption><img src="media/header-nav-after.png" alt="Header navigation with a rounded Build Your Own button"></figure>
+    </div>
+  </div>
+
+  <div class="item" id="inspiration">
+    <h2>9. "Need some inspiration" images cut off</h2>
+    <div class="req">Your feedback: on the Build Your Own page the images of the Need some inspiration cards are cut off at the top on all four.</div>
+    <p>The card images were being cropped to fill a square. They now fit inside the square, so the full height of each set shows, mouthpiece included.</p>
+    <div class="pair single">
+      <figure><figcaption class="before">Before</figcaption><img src="media/inspiration-cards-before.png" alt="Preset cards with cropped images"></figure>
+    </div>
+    <div class="pair single">
+      <figure><figcaption class="after">After</figcaption><img src="media/inspiration-cards-after.png" alt="Preset cards with full images"></figure>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <img src="media/lever-logo.png" alt="Lever Agency">
+    <span>Vitae Glass Shopify redesign · Lever Agency · September 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
