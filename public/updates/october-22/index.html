@@ -101,6 +101,25 @@
   .appgrid { counter-reset: app; }
   .applist li { counter-increment: app; }
   .applist b::before { content: counter(app) ". "; color: var(--clay); }
+  table.apps { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 4px; }
+  table.apps th { text-align: left; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,83,102,0.65); padding: 0 10px 8px; border-bottom: 1px solid var(--line); }
+  table.apps td { padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; line-height: 1.4; }
+  table.apps tr:last-child td { border-bottom: 0; }
+  table.apps td.n { color: var(--clay); font-weight: 700; width: 28px; }
+  table.apps td.app { font-weight: 700; white-space: nowrap; }
+  table.apps td.what { color: rgba(59,83,102,0.85); }
+  .v { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+  .v.rm { background: rgba(63,125,78,0.12); color: var(--green); }
+  .v.ck { background: rgba(196,140,40,0.15); color: #8a5a0b; }
+  .v.kp { background: rgba(59,83,102,0.08); color: var(--ink); }
+  @media (max-width: 760px) {
+    table.apps thead { display: none; }
+    table.apps tr { display: grid; grid-template-columns: 28px 1fr; column-gap: 6px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    table.apps tr:last-child { border-bottom: 0; }
+    table.apps td { border: 0; padding: 1px 0; }
+    table.apps td.n { grid-row: span 3; }
+    table.apps td.app { white-space: normal; }
+  }
 </style>
 </head>
 <body>
@@ -322,47 +341,28 @@
         <span class="tag">Speed</span>
         <h4>1. Which apps do you still use?</h4>
         <p>Every app adds its own code to every page, and on phones that is now the main thing slowing the site down. Here is what each one does on your site, as far as we can see from the outside.</p>
-        <div class="appgrid">
-          <div>
-            <h5>Loads code, shows nothing</h5>
-            <ul class="applist">
-              <li><b>Sticky Add to Cart Bar app</b> Never appears. The bar shoppers see is the theme's own.</li>
-              <li><b>Sales pop-up (old copy)</b> A leftover second install of the pop-up app.</li>
-            </ul>
-            <p class="verdict">Safe to remove now.</p>
-          </div>
-          <div>
-            <h5>Works behind the scenes</h5>
-            <ul class="applist">
-              <li><b>Klaviyo</b> Email and SMS sending, and shopper tracking for your flows.</li>
-              <li><b>GovX</b> Military discount checks (linked in your footer).</li>
-              <li><b>Awin</b> Affiliate sales tracking.</li>
-              <li><b>Rontar</b> Retargeting ads.</li>
-              <li><b>Google Analytics</b> Three separate tags load. One is usually enough, and we can help you find out which is in use.</li>
-            </ul>
-          </div>
-          <div>
-            <h5>Could not identify</h5>
-            <ul class="applist">
-              <li><b>Storeify</b> Loads on every page, but we could not see what it does.</li>
-              <li><b>One.store</b> Loads on every page, but we could not see what it does.</li>
-            </ul>
-            <p class="verdict">If nobody on your team knows what these are for, they are good candidates to remove.</p>
-          </div>
-          <div>
-            <h5>Shows something to shoppers</h5>
-            <ul class="applist">
-              <li><b>Alia</b> Email popup and the Spin to Win tab. Its popup photo is a 438 KB file, and a smaller JPG would open faster.</li>
-              <li><b>Winback</b> SMS sign-up, probably your "$10 off" tab.</li>
-              <li><b>PushOwl</b> Browser notification prompt and the bell.</li>
-              <li><b>Stamped</b> Reviews and the rewards button. Its code loads twice (an old install), and Stamped support can remove the extra copy.</li>
-              <li><b>Free gift app</b> The "Earn Free Gifts" tab.</li>
-              <li><b>Tolstoy</b> Video stories on product pages.</li>
-              <li><b>Wisepops</b> Popups, but none appeared in our visits. Worth checking whether a campaign is still running.</li>
-            </ul>
-          </div>
-        </div>
-        <p class="ask"><strong>Your call:</strong> remove 1 and 2 whenever suits you. For the rest, just reply with the numbers you no longer need. Every app you drop is a straight speed gain.</p>
+        <table class="apps">
+          <thead><tr><th>#</th><th>App</th><th>What it does on your site</th><th>Our read</th></tr></thead>
+          <tbody>
+            <tr><td class="n">1</td><td class="app">Sticky Add to Cart Bar app</td><td class="what">Never shows. The bar shoppers see is the theme's own.</td><td><span class="v rm">Remove</span></td></tr>
+            <tr><td class="n">2</td><td class="app">Sales pop-up (old copy)</td><td class="what">Leftover second install of the pop-up app.</td><td><span class="v rm">Remove</span></td></tr>
+            <tr><td class="n">3</td><td class="app">Storeify</td><td class="what">Loads on every page; we could not see what it does.</td><td><span class="v ck">Remove if unknown</span></td></tr>
+            <tr><td class="n">4</td><td class="app">One.store</td><td class="what">Loads on every page; we could not see what it does.</td><td><span class="v ck">Remove if unknown</span></td></tr>
+            <tr><td class="n">5</td><td class="app">Wisepops</td><td class="what">Popups, but none appeared in our visits.</td><td><span class="v ck">Check if still running</span></td></tr>
+            <tr><td class="n">6</td><td class="app">Google Analytics</td><td class="what">Three separate tags load; one is usually enough.</td><td><span class="v ck">Keep one</span></td></tr>
+            <tr><td class="n">7</td><td class="app">Stamped</td><td class="what">Reviews and rewards. Its code loads twice (old install).</td><td><span class="v kp">Keep, ask Stamped to remove the copy</span></td></tr>
+            <tr><td class="n">8</td><td class="app">Alia</td><td class="what">Email popup and Spin to Win. Popup photo is 438 KB.</td><td><span class="v kp">Keep, use a smaller photo</span></td></tr>
+            <tr><td class="n">9</td><td class="app">Winback</td><td class="what">SMS sign-up, probably your "$10 off" tab.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">10</td><td class="app">PushOwl</td><td class="what">Browser notification prompt and bell.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">11</td><td class="app">Klaviyo</td><td class="what">Email and SMS sending, shopper tracking.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">12</td><td class="app">GovX</td><td class="what">Military discount checks (linked in your footer).</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">13</td><td class="app">Awin</td><td class="what">Affiliate sales tracking.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">14</td><td class="app">Rontar</td><td class="what">Retargeting ads.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">15</td><td class="app">Free gift app</td><td class="what">The "Earn Free Gifts" tab.</td><td><span class="v kp">Keep if used</span></td></tr>
+            <tr><td class="n">16</td><td class="app">Tolstoy</td><td class="what">Video stories on product pages.</td><td><span class="v kp">Keep if used</span></td></tr>
+          </tbody>
+        </table>
+        <p class="ask"><strong>Your call:</strong> 1 and 2 can go now. For the rest, just reply with the numbers you no longer use. Every app you drop is a straight speed gain.</p>
       </div>
 
       <div class="card">
