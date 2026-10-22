@@ -98,6 +98,9 @@
   .applist li { font-size: 14px; line-height: 1.5; color: rgba(59,83,102,0.85); padding-left: 12px; border-left: 2px solid var(--line); }
   .applist b { display: block; color: var(--ink); font-size: 14px; }
   .verdict { margin-top: 10px !important; font-size: 14px !important; font-weight: 700; color: var(--green); }
+  .appgrid { counter-reset: app; }
+  .applist li { counter-increment: app; }
+  .applist b::before { content: counter(app) ". "; color: var(--clay); }
 </style>
 </head>
 <body>
@@ -317,7 +320,7 @@
     <div class="cards">
       <div class="card wide">
         <span class="tag">Speed</span>
-        <h4>Which apps do you still use?</h4>
+        <h4>1. Which apps do you still use?</h4>
         <p>Every app adds its own code to every page, and on phones that is now the main thing slowing the site down. Here is what each one does on your site, as far as we can see from the outside.</p>
         <div class="appgrid">
           <div>
@@ -359,19 +362,19 @@
             </ul>
           </div>
         </div>
-        <p class="ask"><strong>Your call:</strong> remove the first group whenever suits you. For the rest, tell us which ones you actively use. Every app you do not need is a straight speed gain.</p>
+        <p class="ask"><strong>Your call:</strong> remove 1 and 2 whenever suits you. For the rest, just reply with the numbers you no longer need. Every app you drop is a straight speed gain.</p>
       </div>
 
       <div class="card">
         <span class="tag">Age gate</span>
-        <h4>Show it on every page?</h4>
+        <h4>2. Show the age gate on every page?</h4>
         <p>The age gate only appears on the homepage. A visitor who lands straight on a product page, from an ad or a Google search for example, never sees it.</p>
         <p class="ask"><strong>Your call:</strong> say the word and we will make it cover every page.</p>
       </div>
 
       <div class="card">
         <span class="tag">First visit</span>
-        <h4>Too many popups at once</h4>
+        <h4>3. Too many popups at once</h4>
         <p>A first-time visitor gets the age check, then the Alia "$30 off" popup, then a "Never Miss A Beat" notification prompt on top. A PushOwl bell then stays in the bottom left corner and, on phones, covers the quantity box.</p>
         <p class="ask"><strong>We suggest:</strong> keep one welcome offer, and turn off the PushOwl prompt and bell (or hide the bell on phones) in PushOwl's settings.</p>
       </div>
@@ -381,13 +384,13 @@
     <div class="cards">
       <div class="card later">
         <span class="tag">Badges</span>
-        <h4>Left-side tabs</h4>
+        <h4>4. Left-side tabs</h4>
         <p>If Alia's own settings (and those of the app showing the "$10 off" tab) cannot get the left-side tabs where you want them, we will align and size them from the theme.</p>
         <p class="ask"><strong>Size:</strong> small, once you have tried the app settings.</p>
       </div>
       <div class="card later">
         <span class="tag">Speed</span>
-        <h4>Delay non-essential app code</h4>
+        <h4>5. Delay non-essential app code</h4>
         <p>Holding back chat, popups, rewards, video stories and tracking until a visitor first scrolls or taps is the next big step for phone speed.</p>
         <p class="ask"><strong>Size:</strong> larger, since every app has to be tested to make sure it still works when delayed. Easier once the app list above is settled.</p>
       </div>
