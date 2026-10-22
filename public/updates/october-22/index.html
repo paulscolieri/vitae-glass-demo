@@ -87,12 +87,17 @@
   .card.later .ask strong { color: var(--clay); }
   .tag { align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: rgba(179,65,58,0.1); color: var(--red); }
   .card.later .tag { background: rgba(106,127,153,0.14); color: var(--clay); }
-  .appgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 32px; margin-top: 6px; }
-  @media (max-width: 760px) { .appgrid { grid-template-columns: 1fr; } }
+  .appgrid { columns: 2; column-gap: 32px; margin-top: 6px; }
+  .appgrid > div { break-inside: avoid; margin-bottom: 20px; }
+  @media (max-width: 760px) { .appgrid { columns: 1; } }
   .appgrid h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,83,102,0.7); }
   .appgrid p { font-size: 14px; color: rgba(59,83,102,0.85); }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; padding: 0; list-style: none; }
   .chips li { font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--ivory); border: 1px solid var(--line); }
+  .applist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .applist li { font-size: 14px; line-height: 1.5; color: rgba(59,83,102,0.85); padding-left: 12px; border-left: 2px solid var(--line); }
+  .applist b { display: block; color: var(--ink); font-size: 14px; }
+  .verdict { margin-top: 10px !important; font-size: 14px !important; font-weight: 700; color: var(--green); }
 </style>
 </head>
 <body>
@@ -269,22 +274,22 @@
       The apps are your call, and our recommendations are in the Open / Next phase section at the bottom.
     </p>
 
-    <h3 class="sub">Side by side on a typical phone</h3>
-    <p>Both loads below use the same simulated mid-range phone on a 4G connection, starting at the same moment. Popups were hidden on both so you can see the page itself.</p>
+    <h3 class="sub">Side by side on a recent phone</h3>
+    <p>Both loads below use the same recent phone on a good 4G connection, starting at the same moment. Popups were hidden on both so you can see the page itself. The banner now shows a soft preview straight away and is sharp within about a second.</p>
     <div class="pair single narrow">
-      <figure><figcaption>Before (left) and after (right), real time</figcaption><video src="media/speed-phone.mp4?v=3" poster="media/speed-phone-poster.jpg?v=3" controls muted playsinline preload="metadata"></video></figure>
+      <figure><figcaption>Before (left) and after (right), real time</figcaption><video src="media/speed-phone.mp4?v=4" poster="media/speed-phone-poster.jpg?v=4" controls muted playsinline preload="metadata"></video></figure>
     </div>
 
     <div class="tablewrap">
       <table class="results">
-        <tr><th>Homepage on a phone</th><th class="b">Before</th><th class="a">After</th></tr>
+        <tr><th>Google's PageSpeed test phone</th><th class="b">Before</th><th class="a">After</th></tr>
         <tr><td>Main banner fully showing</td><td>10.7 seconds</td><td class="a">about 6.5 seconds</td></tr>
         <tr><td>Page completely finished loading</td><td>33 seconds</td><td class="a">25 seconds</td></tr>
         <tr><td>Banner video a phone downloads</td><td>2 MB</td><td class="a">0.3 MB</td></tr>
         <tr><td>Total downloaded</td><td>5.9 MB</td><td class="a">5.4 MB</td></tr>
       </table>
     </div>
-    <p class="note">Measured with a simulated mid-range phone, averaged over several runs. Google's PageSpeed score moves with these timings, and we will rerun it on your live site once this is published.</p>
+    <p class="note">The table uses the much slower phone and connection that Google's PageSpeed test simulates (an older budget phone on weak 4G), which is where your mobile score of 39 comes from. Most of your visitors are on faster phones, like the video above. We will rerun PageSpeed on your live site once this is published.</p>
 
     <h3 class="sub">What we changed</h3>
     <ul>
@@ -313,28 +318,48 @@
       <div class="card wide">
         <span class="tag">Speed</span>
         <h4>Which apps do you still use?</h4>
-        <p>Every app adds its own code to every page, and on phones that is now the main thing slowing the site down. Each one you remove is a straight gain.</p>
+        <p>Every app adds its own code to every page, and on phones that is now the main thing slowing the site down. Here is what each one does on your site, as far as we can see from the outside.</p>
         <div class="appgrid">
           <div>
-            <h5>Likely removable</h5>
-            <ul class="chips"><li>Sticky Add to Cart bar</li><li>Wisepops</li><li>Rontar</li><li>Storeify</li><li>GovX</li><li>One.store</li><li>Winback</li><li>Awin</li><li>Old sales pop-up copy</li></ul>
-            <p>The theme already has its own sticky add to cart bar.</p>
+            <h5>Loads code, shows nothing</h5>
+            <ul class="applist">
+              <li><b>Sticky Add to Cart Bar app</b> Never appears. The bar shoppers see is the theme's own.</li>
+              <li><b>Sales pop-up (old copy)</b> A leftover second install of the pop-up app.</li>
+            </ul>
+            <p class="verdict">Safe to remove now.</p>
           </div>
           <div>
-            <h5>Overlapping popups</h5>
-            <ul class="chips"><li>Alia</li><li>Klaviyo</li><li>Wisepops</li><li>PushOwl</li></ul>
-            <p>All four can show popups or prompts. One or two is usually enough.</p>
+            <h5>Works behind the scenes</h5>
+            <ul class="applist">
+              <li><b>Klaviyo</b> Email and SMS sending, and shopper tracking for your flows.</li>
+              <li><b>GovX</b> Military discount checks (linked in your footer).</li>
+              <li><b>Awin</b> Affiliate sales tracking.</li>
+              <li><b>Rontar</b> Retargeting ads.</li>
+              <li><b>Google Analytics</b> Three separate tags load. One is usually enough, and we can help you find out which is in use.</li>
+            </ul>
           </div>
           <div>
-            <h5>Analytics</h5>
-            <p>Three separate Google Analytics tags load on every page. One is usually enough, and we can help you find out which one is in use.</p>
+            <h5>Could not identify</h5>
+            <ul class="applist">
+              <li><b>Storeify</b> Loads on every page, but we could not see what it does.</li>
+              <li><b>One.store</b> Loads on every page, but we could not see what it does.</li>
+            </ul>
+            <p class="verdict">If nobody on your team knows what these are for, they are good candidates to remove.</p>
           </div>
           <div>
-            <h5>Reviews and popup image</h5>
-            <p>Stamped's code loads twice (an old install left behind), and Stamped support can remove the extra copy. The photo in the Alia popup is a 438 KB file, and a smaller JPG would open faster.</p>
+            <h5>Shows something to shoppers</h5>
+            <ul class="applist">
+              <li><b>Alia</b> Email popup and the Spin to Win tab. Its popup photo is a 438 KB file, and a smaller JPG would open faster.</li>
+              <li><b>Winback</b> SMS sign-up, probably your "$10 off" tab.</li>
+              <li><b>PushOwl</b> Browser notification prompt and the bell.</li>
+              <li><b>Stamped</b> Reviews and the rewards button. Its code loads twice (an old install), and Stamped support can remove the extra copy.</li>
+              <li><b>Free gift app</b> The "Earn Free Gifts" tab.</li>
+              <li><b>Tolstoy</b> Video stories on product pages.</li>
+              <li><b>Wisepops</b> Popups, but none appeared in our visits. Worth checking whether a campaign is still running.</li>
+            </ul>
           </div>
         </div>
-        <p class="ask"><strong>Your call:</strong> reply with the apps you want to keep and we will tell you exactly which ones to uninstall.</p>
+        <p class="ask"><strong>Your call:</strong> remove the first group whenever suits you. For the rest, tell us which ones you actively use. Every app you do not need is a straight speed gain.</p>
       </div>
 
       <div class="card">
