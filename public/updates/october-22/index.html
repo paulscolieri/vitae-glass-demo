@@ -70,6 +70,29 @@
   .tablewrap { max-width: 860px; overflow-x: auto; }
   .phase { border: 1px dashed var(--clay); border-radius: 10px; padding: 14px 18px; max-width: 860px; margin: 0 0 18px; font-size: 15px; }
   .phase strong { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; display: block; margin-bottom: 4px; color: var(--clay); }
+  /* Open / Next phase section */
+  .next-intro { max-width: 860px; color: rgba(59,83,102,0.8); margin: 0 0 8px; }
+  .group-head { display: flex; align-items: baseline; gap: 12px; margin: 36px 0 14px; }
+  .group-head h3 { font-family: Georgia, serif; font-weight: 500; font-size: 22px; margin: 0; }
+  .group-head span { font-size: 13px; color: rgba(59,83,102,0.65); }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 1040px; }
+  @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px 22px; border-top: 4px solid var(--red); display: flex; flex-direction: column; gap: 10px; }
+  .card.wide { grid-column: 1 / -1; }
+  .card.later { border-top-color: var(--clay); }
+  .card h4 { font-family: Georgia, serif; font-weight: 500; font-size: 19px; margin: 0; line-height: 1.3; }
+  .card p { margin: 0; font-size: 15px; max-width: none; }
+  .card .ask { margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 14px; color: var(--ink); }
+  .card .ask strong { color: var(--red); }
+  .card.later .ask strong { color: var(--clay); }
+  .tag { align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: rgba(179,65,58,0.1); color: var(--red); }
+  .card.later .tag { background: rgba(106,127,153,0.14); color: var(--clay); }
+  .appgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 32px; margin-top: 6px; }
+  @media (max-width: 760px) { .appgrid { grid-template-columns: 1fr; } }
+  .appgrid h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,83,102,0.7); }
+  .appgrid p { font-size: 14px; color: rgba(59,83,102,0.85); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; padding: 0; list-style: none; }
+  .chips li { font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--ivory); border: 1px solid var(--line); }
 </style>
 </head>
 <body>
@@ -283,38 +306,66 @@
 
   <div class="item is-open" id="next">
     <h2>Open / Next phase <span class="open">Open</span></h2>
-    <p>Everything that needs an answer or a decision from you, plus what we suggest tackling next.</p>
+    <p class="next-intro">What needs a decision from you, and what we suggest tackling next.</p>
 
-    <h3 class="sub">Open: needs an answer from you</h3>
-    <div class="flag">
-      <strong>Which apps do you still use?</strong>
-      <ul>
-        <li><strong>Likely removable:</strong> Sticky Add to Cart bar (the theme already has its own), Wisepops, Rontar, Storeify, GovX, One.store, Winback, Awin, and a leftover second copy of the sales pop-up app.</li>
-        <li><strong>Overlapping popups:</strong> Alia, Klaviyo, Wisepops and PushOwl can all show popups or prompts. One or two is usually enough.</li>
-        <li><strong>Analytics:</strong> three separate Google Analytics tags load on every page. One is usually enough, and we can help you find out which one is in use.</li>
-        <li><strong>Reviews:</strong> the Stamped reviews code loads twice, from two different addresses, which usually means an old install was left behind. Stamped support can remove the extra one.</li>
-        <li><strong>Popup image:</strong> the product photo in the Alia popup is a 438 KB file. Re-uploading it as a smaller JPG in Alia makes the popup open faster.</li>
-      </ul>
-    </div>
-    <div class="flag">
-      <strong>Age gate on every page?</strong>
-      The age gate you added only appears on the homepage. A visitor who lands straight on a product page (from an ad or a Google search, for example) never sees it. If it should cover every page, let us know and we will move it.
-    </div>
-    <div class="flag">
-      <strong>Popups on the first visit</strong>
-      A first-time visitor currently gets the age check, then the Alia "$30 off" popup, then a browser notification prompt ("Never Miss A Beat") on top of it.
-      Afterwards a notification bell from PushOwl stays in the bottom left corner, and on phones it covers the quantity box on product pages.
-      We suggest choosing one welcome offer and turning off the PushOwl prompt and bell (or hiding the bell on phones) in PushOwl's own settings.
+    <div class="group-head"><h3>Needs your answer</h3><span>3 quick decisions</span></div>
+    <div class="cards">
+      <div class="card wide">
+        <span class="tag">Speed</span>
+        <h4>Which apps do you still use?</h4>
+        <p>Every app adds its own code to every page, and on phones that is now the main thing slowing the site down. Each one you remove is a straight gain.</p>
+        <div class="appgrid">
+          <div>
+            <h5>Likely removable</h5>
+            <ul class="chips"><li>Sticky Add to Cart bar</li><li>Wisepops</li><li>Rontar</li><li>Storeify</li><li>GovX</li><li>One.store</li><li>Winback</li><li>Awin</li><li>Old sales pop-up copy</li></ul>
+            <p>The theme already has its own sticky add to cart bar.</p>
+          </div>
+          <div>
+            <h5>Overlapping popups</h5>
+            <ul class="chips"><li>Alia</li><li>Klaviyo</li><li>Wisepops</li><li>PushOwl</li></ul>
+            <p>All four can show popups or prompts. One or two is usually enough.</p>
+          </div>
+          <div>
+            <h5>Analytics</h5>
+            <p>Three separate Google Analytics tags load on every page. One is usually enough, and we can help you find out which one is in use.</p>
+          </div>
+          <div>
+            <h5>Reviews and popup image</h5>
+            <p>Stamped's code loads twice (an old install left behind), and Stamped support can remove the extra copy. The photo in the Alia popup is a 438 KB file, and a smaller JPG would open faster.</p>
+          </div>
+        </div>
+        <p class="ask"><strong>Your call:</strong> reply with the apps you want to keep and we will tell you exactly which ones to uninstall.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Age gate</span>
+        <h4>Show it on every page?</h4>
+        <p>The age gate only appears on the homepage. A visitor who lands straight on a product page, from an ad or a Google search for example, never sees it.</p>
+        <p class="ask"><strong>Your call:</strong> say the word and we will make it cover every page.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">First visit</span>
+        <h4>Too many popups at once</h4>
+        <p>A first-time visitor gets the age check, then the Alia "$30 off" popup, then a "Never Miss A Beat" notification prompt on top. A PushOwl bell then stays in the bottom left corner and, on phones, covers the quantity box.</p>
+        <p class="ask"><strong>We suggest:</strong> keep one welcome offer, and turn off the PushOwl prompt and bell (or hide the bell on phones) in PushOwl's settings.</p>
+      </div>
     </div>
 
-    <h3 class="sub">Next phase</h3>
-    <div class="phase">
-      <strong>Left-side badges</strong>
-      If Alia's own settings (and those of the app showing the "$10 off" tab) cannot get the left-side tabs where you want them, we will align and size them from the theme.
-    </div>
-    <div class="phase">
-      <strong>Delay non-essential app code</strong>
-      Holding back chat, popups, rewards, video stories and tracking until a visitor first scrolls or taps is the next big step for phone speed. Each app has to be tested to make sure it still works when delayed, so it is a larger piece of work, and it is easier once the app list above is settled.
+    <div class="group-head"><h3>Next phase</h3><span>What we suggest tackling next</span></div>
+    <div class="cards">
+      <div class="card later">
+        <span class="tag">Badges</span>
+        <h4>Left-side tabs</h4>
+        <p>If Alia's own settings (and those of the app showing the "$10 off" tab) cannot get the left-side tabs where you want them, we will align and size them from the theme.</p>
+        <p class="ask"><strong>Size:</strong> small, once you have tried the app settings.</p>
+      </div>
+      <div class="card later">
+        <span class="tag">Speed</span>
+        <h4>Delay non-essential app code</h4>
+        <p>Holding back chat, popups, rewards, video stories and tracking until a visitor first scrolls or taps is the next big step for phone speed.</p>
+        <p class="ask"><strong>Size:</strong> larger, since every app has to be tested to make sure it still works when delayed. Easier once the app list above is settled.</p>
+      </div>
     </div>
   </div>
 
