@@ -95,7 +95,8 @@
     <li><a href="#specs">Specs and What's included</a></li>
     <li><a href="#contrast">White text hard to read</a></li>
     <li><a href="#badges">Floating badges</a></li>
-    <li><a href="#speed" class="open">Mobile page speed</a></li>
+    <li><a href="#speed">Mobile page speed</a></li>
+    <li><a href="#next" class="open">Open / Next phase</a></li>
   </ol>
 
   <div class="item" id="menu">
@@ -224,30 +225,22 @@
       The "Spin to Win" tab belongs to your email popup app (Alia) and appears after a visitor closes the popup.
       Its position, size and style are set inside Alia itself, so you can line it up and shrink it there directly, without any theme changes.
       The same goes for the "$10 off" tab, which is controlled by the app that shows it.
+      If the apps' settings cannot get them where you want them, see <a href="#next">Next phase</a> at the bottom.
     </p>
     <div class="pair slim">
       <figure><figcaption>Today<small>Spin to Win tab on the left edge, after the popup is closed.</small></figcaption><img src="media/left-tab-now.jpg" alt="Spin to Win tab on the left edge of the page"></figure>
     </div>
-    <p class="note">
-      A suggestion while you are in those settings: a first-time visitor currently gets the age check, then the Alia "$30 off" popup, then a browser notification prompt ("Never Miss A Beat") on top of it.
-      Afterwards a notification bell from PushOwl stays in the bottom left corner, and on phones it covers the quantity box on product pages.
-      Choosing one welcome offer, and turning off the PushOwl prompt and bell (or hiding the bell on phones) in PushOwl's settings, would make the first visit much calmer.
-    </p>
-    <div class="phase">
-      <strong>Next phase</strong>
-      If the apps' own settings cannot get the left-side tabs where you want them, we will align and size them from the theme as part of the next phase.
-    </div>
   </div>
 
-  <div class="item is-open" id="speed">
-    <h2>7. Mobile page speed <span class="open">Open</span></h2>
+  <div class="item" id="speed">
+    <h2>7. Mobile page speed</h2>
     <div class="req">Your question: the speed score is around 85 on desktop and 30 to 40 on mobile. Did the age gate affect it, and are there other ways to speed up mobile?</div>
     <p>
       The age gate is not the problem.
       We measured it on its own and it adds almost nothing.
       The two real causes on phones were the homepage banner, which made a phone download a large 2 MB video before it could show anything, and the number of apps loading on every page.
       We fixed everything on the theme side.
-      The apps are your call, and our recommendations are listed further down.
+      The apps are your call, and our recommendations are in the Open / Next phase section at the bottom.
     </p>
 
     <h3 class="sub">Side by side on a typical phone</h3>
@@ -269,7 +262,8 @@
 
     <h3 class="sub">What we changed</h3>
     <ul>
-      <li><strong>Banner shows instantly:</strong> phones now get a small still image straight away (32 KB), cropped for a phone screen. The video loads afterwards and fades in over it, and phones get their own lighter version of it.</li>
+      <li><strong>Banner shows sooner:</strong> phones now get a small still image first (32 KB), cropped for a phone screen. The video loads afterwards and fades in over it, and phones get their own lighter version of it.</li>
+      <li><strong>Banner loads smoothly:</strong> on a slow connection the banner used to draw itself in bands from the top down. It now shows a soft blurred preview straight away, and the sharp image fades in over it once it has fully arrived.</li>
       <li><strong>Lower videos wait their turn:</strong> the two videos further down the homepage now only load when you scroll near them.</li>
       <li><strong>Fonts load once:</strong> the heading and button fonts were being downloaded twice, and one unused font was being loaded on every page.</li>
       <li><strong>Unused app code removed:</strong> the sales pop-up app was loading three extra code libraries on every page while showing nothing (its notifications are switched off). It is turned off now and can be switched back on any time under App embeds.</li>
@@ -280,10 +274,17 @@
     <p>
       Around 30 apps and tracking tools add their own code to every page, and on a phone they all compete with your content for the connection.
       Those apps install themselves outside the theme, so only removing them (or changing their settings) makes a difference.
-      Each one you remove is a straight gain.
+      Our recommendations are in the <a href="#next">Open / Next phase</a> section below.
     </p>
+  </div>
+
+  <div class="item is-open" id="next">
+    <h2>Open / Next phase <span class="open">Open</span></h2>
+    <p>Everything that needs an answer or a decision from you, plus what we suggest tackling next.</p>
+
+    <h3 class="sub">Open: needs an answer from you</h3>
     <div class="flag">
-      <strong>Open: please confirm which apps you still use</strong>
+      <strong>Which apps do you still use?</strong>
       <ul>
         <li><strong>Likely removable:</strong> Sticky Add to Cart bar (the theme already has its own), Wisepops, Rontar, Storeify, GovX, One.store, Winback, Awin, and a leftover second copy of the sales pop-up app.</li>
         <li><strong>Overlapping popups:</strong> Alia, Klaviyo, Wisepops and PushOwl can all show popups or prompts. One or two is usually enough.</li>
@@ -293,12 +294,24 @@
       </ul>
     </div>
     <div class="flag">
-      <strong>Open: age gate on every page?</strong>
+      <strong>Age gate on every page?</strong>
       The age gate you added only appears on the homepage. A visitor who lands straight on a product page (from an ad or a Google search, for example) never sees it. If it should cover every page, let us know and we will move it.
     </div>
+    <div class="flag">
+      <strong>Popups on the first visit</strong>
+      A first-time visitor currently gets the age check, then the Alia "$30 off" popup, then a browser notification prompt ("Never Miss A Beat") on top of it.
+      Afterwards a notification bell from PushOwl stays in the bottom left corner, and on phones it covers the quantity box on product pages.
+      We suggest choosing one welcome offer and turning off the PushOwl prompt and bell (or hiding the bell on phones) in PushOwl's own settings.
+    </div>
+
+    <h3 class="sub">Next phase</h3>
     <div class="phase">
-      <strong>Next phase</strong>
-      Delaying non-essential app code (chat, popups, rewards, video stories, tracking) until a visitor first scrolls or taps is the next big step for phone speed. Each app has to be tested to make sure it still works when delayed, so it is a larger piece of work, and it is easier once the app list above is settled.
+      <strong>Left-side badges</strong>
+      If Alia's own settings (and those of the app showing the "$10 off" tab) cannot get the left-side tabs where you want them, we will align and size them from the theme.
+    </div>
+    <div class="phase">
+      <strong>Delay non-essential app code</strong>
+      Holding back chat, popups, rewards, video stories and tracking until a visitor first scrolls or taps is the next big step for phone speed. Each app has to be tested to make sure it still works when delayed, so it is a larger piece of work, and it is easier once the app list above is settled.
     </div>
   </div>
 
