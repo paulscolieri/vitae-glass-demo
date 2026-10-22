@@ -94,7 +94,7 @@
     <li><a href="#footer">Footer too tall, especially on mobile</a></li>
     <li><a href="#specs">Specs and What's included</a></li>
     <li><a href="#contrast">White text hard to read</a></li>
-    <li><a href="#badges" class="open">Floating badges</a></li>
+    <li><a href="#badges">Floating badges</a></li>
     <li><a href="#speed" class="open">Mobile page speed</a></li>
   </ol>
 
@@ -200,11 +200,11 @@
     </div>
   </div>
 
-  <div class="item is-open" id="badges">
-    <h2>6. Floating badges <span class="open">Open</span></h2>
+  <div class="item" id="badges">
+    <h2>6. Floating badges</h2>
     <div class="req">Your request: stack the free gift badge and the rewards badge on the right using little space, and align and minimize the Spin to Win popup and the $10 off SMS tab on the left.</div>
 
-    <h3 class="sub">Right side: done</h3>
+    <h3 class="sub">Right side</h3>
     <p>
       The rewards button (the small gift box) used to sit on its own in the bottom right corner.
       It is now docked directly under the "Earn Free Gifts" tab, at the same width and in the same black, so the two read as one slim strip on the edge of the screen.
@@ -219,22 +219,23 @@
       <figure class="phone"><figcaption class="after">After, on a phone<small>Clear of the buy area.</small></figcaption><img src="media/badges-phone-after.jpg" alt="Phone product page with both badges stacked on the right edge"></figure>
     </div>
 
-    <h3 class="sub">Left side: needs a setting in your popup app</h3>
+    <h3 class="sub">Left side: adjustable in your popup apps</h3>
     <p>
       The "Spin to Win" tab belongs to your email popup app (Alia) and appears after a visitor closes the popup.
-      Its position and size are controlled inside Alia, not by the theme, so the clean fix is to change it there.
-      We would rather not override another app from the theme, because the app can change its own layout at any time and break the override.
+      Its position, size and style are set inside Alia itself, so you can line it up and shrink it there directly, without any theme changes.
+      The same goes for the "$10 off" tab, which is controlled by the app that shows it.
     </p>
     <div class="pair slim">
       <figure><figcaption>Today<small>Spin to Win tab on the left edge, after the popup is closed.</small></figcaption><img src="media/left-tab-now.jpg" alt="Spin to Win tab on the left edge of the page"></figure>
     </div>
-    <div class="flag">
-      <strong>Open: what we need from you</strong>
-      <ul>
-        <li><strong>Alia access:</strong> add us as a collaborator on Alia (or share a login) and we will set the Spin to Win tab to a slim left-edge tab lined up with the right-side strip. If you would rather do it yourself, we can walk you through it on a short call.</li>
-        <li><strong>Which app shows the "$10 off" tab?</strong> We could not get it to appear in our testing. If you can tell us the app (or send a screenshot of where it shows up), we will line it up under Spin to Win.</li>
-        <li><strong>Too many popups at once:</strong> a first-time visitor currently gets the age check, then the Alia "$30 off" popup, then a browser notification prompt ("Never Miss A Beat") on top of it. Afterwards a notification bell stays in the bottom left corner, and on phones it covers the quantity box on product pages. We suggest choosing one welcome offer and turning off the notification prompt and bell in its app (PushOwl), or at least hiding the bell on phones.</li>
-      </ul>
+    <p class="note">
+      A suggestion while you are in those settings: a first-time visitor currently gets the age check, then the Alia "$30 off" popup, then a browser notification prompt ("Never Miss A Beat") on top of it.
+      Afterwards a notification bell from PushOwl stays in the bottom left corner, and on phones it covers the quantity box on product pages.
+      Choosing one welcome offer, and turning off the PushOwl prompt and bell (or hiding the bell on phones) in PushOwl's settings, would make the first visit much calmer.
+    </p>
+    <div class="phase">
+      <strong>Next phase</strong>
+      If the apps' own settings cannot get the left-side tabs where you want them, we will align and size them from the theme as part of the next phase.
     </div>
   </div>
 
