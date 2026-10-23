@@ -291,8 +291,8 @@
     <p>
       The age gate is not the problem.
       We measured it on its own and it adds almost nothing.
-      The two real causes on phones were the homepage banner, which made a phone download a large 2 MB video before it could show anything, and the number of apps loading on every page.
-      We fixed everything on the theme side.
+      The two real causes on phones were the homepage banner, which made a phone download a large 2 MB video that took about 8 seconds to load even on a good connection, and the number of apps loading on every page.
+      We fixed everything on the theme side in the preview copy, and your live site gets these improvements when you publish it.
       The apps are your call, and our recommendations are in the Open / Next phase section at the bottom.
     </p>
 
@@ -304,14 +304,13 @@
 
     <div class="tablewrap">
       <table class="results">
-        <tr><th>Google's PageSpeed test phone</th><th class="b">Before</th><th class="a">After</th></tr>
-        <tr><td>Main banner fully showing</td><td>10.7 seconds</td><td class="a">about 6.5 seconds</td></tr>
-        <tr><td>Page completely finished loading</td><td>33 seconds</td><td class="a">25 seconds</td></tr>
+        <tr><th>Homepage on a recent phone, good 4G</th><th class="b">Before</th><th class="a">After</th></tr>
+        <tr><td>Banner video fully loaded</td><td>about 7.8 seconds</td><td class="a">about 3.7 seconds</td></tr>
         <tr><td>Banner video a phone downloads</td><td>2 MB</td><td class="a">0.3 MB</td></tr>
-        <tr><td>Total downloaded</td><td>5.9 MB</td><td class="a">5.4 MB</td></tr>
+        <tr><td>Your site's own files downloaded (theme, images and videos)</td><td>6.5 MB</td><td class="a">3.8 MB</td></tr>
       </table>
     </div>
-    <p class="note">The table uses the much slower phone and connection that Google's PageSpeed test simulates (an older budget phone on weak 4G), which is where your mobile score of 39 comes from. Most of your visitors are on faster phones, like the video above. We will rerun PageSpeed on your live site once this is published.</p>
+    <p class="note">Downloading less matters most on a weak connection, and that is what Google's PageSpeed test measures. It simulates an older budget phone on weak 4G, which is where your mobile score of 39 comes from. Most of your visitors are on faster phones, like the video above. The score itself moves a lot from one test to the next: we tested your live homepage twice, a few minutes apart, and got 34 and then 53. The side-by-side video above is a steadier guide than any single score. We will rerun PageSpeed on your live site once this is published.</p>
 
     <h3 class="sub">What we changed</h3>
     <ul>
@@ -327,6 +326,8 @@
     <p>
       Around 30 apps and tracking tools add their own code to every page, and on a phone they all compete with your content for the connection.
       Those apps install themselves outside the theme, so only removing them (or changing their settings) makes a difference.
+      The biggest single one is the Sticky Add to Cart Bar app. On Google's test phone it takes about 1.4 seconds of processing on every page, more than any other app, and it never shows anything because the sticky bar your shoppers see is built into the theme.
+      Removing it is the quickest speed gain available.
       Our recommendations are in the <a href="#next">Open / Next phase</a> section below.
     </p>
   </div>
@@ -344,7 +345,7 @@
         <table class="apps">
           <thead><tr><th>#</th><th>App</th><th>What it does on your site</th><th>Our read</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td class="app">Sticky Add to Cart Bar app</td><td class="what">Never shows. The bar shoppers see is the theme's own.</td><td><span class="v rm">Remove</span></td></tr>
+            <tr><td class="n">1</td><td class="app">Sticky Add to Cart Bar app</td><td class="what">Never shows. The bar shoppers see is the theme's own. It is also the slowest app on the site.</td><td><span class="v rm">Remove</span></td></tr>
             <tr><td class="n">2</td><td class="app">Sales pop-up (old copy)</td><td class="what">Leftover second install of the pop-up app.</td><td><span class="v rm">Remove</span></td></tr>
             <tr><td class="n">3</td><td class="app">Storeify</td><td class="what">Loads on every page; we could not see what it does.</td><td><span class="v ck">Remove if unknown</span></td></tr>
             <tr><td class="n">4</td><td class="app">One.store</td><td class="what">Loads on every page; we could not see what it does.</td><td><span class="v ck">Remove if unknown</span></td></tr>
@@ -362,7 +363,7 @@
             <tr><td class="n">16</td><td class="app">Tolstoy</td><td class="what">Video stories on product pages.</td><td><span class="v kp">Keep if used</span></td></tr>
           </tbody>
         </table>
-        <p class="ask"><strong>Your call:</strong> 1 and 2 can go now. For the rest, just reply with the numbers you no longer use. Every app you drop is a straight speed gain.</p>
+        <p class="ask"><strong>Your call:</strong> 1 and 2 can go now, and removing 1 is the biggest speed gain on this list. For the rest, just reply with the numbers you no longer use. Every app you drop is a straight speed gain.</p>
       </div>
 
       <div class="card">
